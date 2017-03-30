@@ -1,6 +1,7 @@
-### windows-cloud-devtools
+windows-cloud-devtools
+=======================
 
-A powershell container with various cloud development tools preinstalled.
+A powershell container with various cloud development tools pre-installed.
 
 - chocolately
 - curl
@@ -8,3 +9,8 @@ A powershell container with various cloud development tools preinstalled.
 - python
 - aws-cli
 - terraform
+
+### usage
+```
+docker run -it --rm -v $env:USERPROFILE\.aws:c:\users\containeradministrator\.aws -v c:\code:c:\code jritsema/windows-cloud-devtools
+```
